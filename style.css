@@ -1,0 +1,165 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: rgb(60, 179, 113);
+  font-family:'Verdana', sans-serif;
+}
+
+a {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+}
+
+.main {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  width: 50%;
+  height: 15vh;
+}
+
+.columns {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  margin: auto;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: 4vh;
+  margin-top: 4vh;
+}
+
+.main-column {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.article {
+  display: flex;
+  flex-direction: column;
+  background: rgb(255, 255, 255);
+  width: 100%;
+  min-height: 24vh;
+  margin-bottom: 4vh;
+  font-size: 1em;
+}
+
+.first-article {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  min-height: 0;
+}
+
+.article-image {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-bottom: 2vh;
+}
+
+.article-body {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  min-height: 24vh;
+  padding-left: 3vh;
+  margin-right: 3vh;
+}
+
+.article-title {
+  display: flex;
+  align-self: flex-end;
+  width: 100%;
+}
+
+.article-content {
+  width: 100%;
+  margin-bottom: 1vh;
+}
+
+.article-info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: flex-end;
+  align-self: flex-end;
+  align-items: flex-end;
+  width: 100%;
+  margin-bottom: 3vh;
+}
+
+.side-column {
+  display: flex;
+  flex-direction: column;
+  margin-left: 4.8vh;
+  width: 50%;
+}
+
+@media screen and (max-width: 961px) {
+
+  .main {
+    width: 100%;
+    padding-left: 4vh;
+    padding-top: 4vh;
+    padding-right: 4vh;
+  }
+
+  .columns {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .column {
+    margin: 0;
+  }
+
+  .side-column {
+    width: 100%;
+  }
+
+  .article-body {
+    width: 100%;
+    min-height: 5vh;
+  }
+
+  .article-content {
+    margin-right: 3vh;
+  }
+
+  .article-info {
+    margin-right: 3vh;
+  }
+
+  .article {
+    min-height: 5vh;
+  }
+
+  .article-title {
+    margin-top: 2vh;
+  }
+
+  .article-image {
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 321px) {
+
+  .article-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+}
